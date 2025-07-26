@@ -12,7 +12,7 @@ sys.path.insert(0, str(src_path))
 # Ensure all imports work
 try:
     from xi import XiOscillator, XiSymbolic, xi_operator
-    print("✓ RSO modules imported successfully in conftest.py")
+    print("+ RSO modules imported successfully in conftest.py")
 except ImportError as e:
-    print(f"✗ Import error in conftest.py: {e}")
+    print(f"- Import error in conftest.py: {e}")
     raise

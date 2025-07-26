@@ -194,10 +194,18 @@ def demonstrate_quantum_rso_correspondence():
     ax2.grid(True, alpha=0.3)
     
     plt.tight_layout()
-    plt.savefig('figures/quantum_rso_correspondence.png', dpi=300, bbox_inches='tight')
-    plt.close()
     
-    print("\nQuantum-classical correspondence plot saved to figures/")
+    # Create figures directory if it doesn't exist
+    import os
+    os.makedirs('figures', exist_ok=True)
+    
+    try:
+        plt.savefig('figures/quantum_rso_correspondence.png', dpi=300, bbox_inches='tight')
+        print("\nQuantum-classical correspondence plot saved to figures/")
+    except Exception as e:
+        print(f"\nWarning: Could not save figure: {e}")
+    finally:
+        plt.close()
     
     # Demonstrate measurement collapse
     print("\nMeasurement Collapse Demonstration:")

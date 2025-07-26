@@ -26,17 +26,17 @@ jobs:
     - name: Test basic imports
       run: |
         cd src
-        python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('✓ Imports work')"
+        python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('Imports work')"
     
     - name: Test oscillator
       run: |
         cd src
-        python -c "from xi import XiOscillator; osc = XiOscillator(True); result = osc.iterate(4); print('✓ Oscillator works:', result)"
+        python -c "from xi import XiOscillator; osc = XiOscillator(True); result = osc.iterate(4); print('Oscillator works:', result)"
     
     - name: Test symbolic
       run: |
         cd src
-        python -c "from xi import XiSymbolic, xi_operator; pred = XiSymbolic('Test'); result = xi_operator(pred, 1); print('✓ Symbolic works, generated', len(result), 'expressions')"
+        python -c "from xi import XiSymbolic, xi_operator; pred = XiSymbolic('Test'); result = xi_operator(pred, 1); print('Symbolic works, generated', len(result), 'expressions')"
     
     - name: Run pytest with PYTHONPATH
       run: |

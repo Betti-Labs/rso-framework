@@ -25,7 +25,7 @@ jobs:
     
     - name: Test imports
       run: |
-        PYTHONPATH=src python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('✓ All imports successful')"
+        PYTHONPATH=src python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('All imports successful')"
     
     - name: Run tests
       run: |
@@ -53,7 +53,7 @@ jobs:
     
     - name: Test imports
       run: |
-        $env:PYTHONPATH="src"; python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('✓ All imports successful')"
+        $env:PYTHONPATH="src"; python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('All imports successful')"
     
     - name: Run tests
       run: |
