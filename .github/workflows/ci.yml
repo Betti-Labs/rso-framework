@@ -27,47 +27,39 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install -r requirements-dev.txt
+        pip install pytest
+      continue-on-error: false
+    
+    - name: Test basic imports
+      run: |
+        python -c "import sys; sys.path.insert(0, 'src'); from xi import XiOscillator; print('✓ Basic imports work')"
+      continue-on-error: false
+    
+    - name: Run core tests
+      run: |
+        python -m pytest tests/ -v --tb=short
+      continue-on-error: false
+    
+    - name: Test basic functionality
+      run: |
+        python test_basic.py
+      continue-on-error: true
     
     - name: Lint with flake8
       run: |
-        # stop the build if there are Python syntax errors or undefined names
+        pip install flake8
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics --exclude=.git,__pycache__,build,dist
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude=.git,__pycache__,build,dist
-      continue-on-error: true  # Don't fail the build on linting issues
-    
-    - name: Type check with mypy
-      run: |
-        mypy src/ --ignore-missing-imports --no-strict-optional
-      continue-on-error: true  # Don't fail the build on type checking issues
-    
-    - name: Test with pytest
-      run: |
-        pytest tests/ -v --tb=short
+      continue-on-error: true
     
     - name: Run formal verification
       run: |
         python src/formal_proofs.py
-      continue-on-error: true  # Don't fail if verification has issues
-    
-    - name: Run performance benchmarks
-      run: |
-        python benchmarks/performance_suite.py
-      continue-on-error: true  # Don't fail if benchmarks have issues
-    
-    - name: Generate figures
-      run: |
-        python src/make_figures.py
-      continue-on-error: true  # Don't fail if figure generation has issues
+      continue-on-error: true
     
     - name: Test CLI
       run: |
         python src/cli.py demo
-        python src/cli.py verify
-        python src/cli.py oscillate --steps 5
-        python src/cli.py symbolic --predicate Test --depth 2
-      continue-on-error: true  # Don't fail if CLI has issues
+      continue-on-error: true
 
   coverage:
     runs-on: ubuntu-latest

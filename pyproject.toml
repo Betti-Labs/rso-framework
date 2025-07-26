@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rso-framework"
+version = "1.0.0"
+description = "Recursive Superpositional Ontology - A framework for contradiction-preserving logic"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Gregory Betti"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.21.0",
+    "sympy>=1.9.0",
+    "nbformat>=5.1.0",
+    "jupyter>=1.0.0",
+    "scipy>=1.7.0",
+    "networkx>=2.6.0",
+    "pytest>=6.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=22.0.0",
+    "mypy>=0.910",
+    "flake8>=4.0.0",
+    "pytest-cov>=3.0.0",
+]
+quantum = [
+    "qiskit>=0.39.0",
+]
+docs = [
+    "sphinx>=4.0.0",
+    "nbsphinx>=0.8.0",
+]
+
+[project.scripts]
+rso = "src.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Betti-Labs/rso-framework"
+Repository = "https://github.com/Betti-Labs/rso-framework"
+Issues = "https://github.com/Betti-Labs/rso-framework/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = ["-v", "--tb=short"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+no_strict_optional = true

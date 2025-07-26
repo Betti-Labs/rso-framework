@@ -1,0 +1,49 @@
+name: Simple Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install matplotlib numpy sympy pytest
+    
+    - name: Test basic imports
+      run: |
+        cd src
+        python -c "from xi import XiOscillator, XiSymbolic, xi_operator; print('✓ Imports work')"
+    
+    - name: Test oscillator
+      run: |
+        cd src
+        python -c "from xi import XiOscillator; osc = XiOscillator(True); result = osc.iterate(4); print('✓ Oscillator works:', result)"
+    
+    - name: Test symbolic
+      run: |
+        cd src
+        python -c "from xi import XiSymbolic, xi_operator; pred = XiSymbolic('Test'); result = xi_operator(pred, 1); print('✓ Symbolic works, generated', len(result), 'expressions')"
+    
+    - name: Run pytest with PYTHONPATH
+      run: |
+        PYTHONPATH=src python -m pytest tests/ -v
+      env:
+        PYTHONPATH: src
+    
+    - name: Test basic script
+      run: |
+        python test_basic.py
