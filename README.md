@@ -1,8 +1,13 @@
 # Recursive Superpositional Ontology (RSO) Laboratory
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=flat-square&logo=github)](https://betti-labs.github.io/rso-framework/)
+[![Academia.edu](https://img.shields.io/badge/Academia.edu-Published-blue?style=flat-square&logo=academia)](https://www.academia.edu/143089984/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square&logo=python)](https://www.python.org/downloads/)
+
 ## 🎉 **PUBLISHED RESEARCH** 🎉
 
-📄 **[Read the Full Paper on Academia.edu](https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling)**
+🔊 **[Listen to the RSO Deep Dive](https://betti-labs.github.io/rso-framework/)** | 📄 **[Read the Full Paper on Academia.edu](https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling)**
 
 *"Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling"* by Gregory Betti is now available for the global research community.
 
