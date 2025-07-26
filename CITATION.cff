@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "RSO Framework: Recursive Superpositional Ontology"
+abstract: "A computational framework for contradiction-preserving logic and reality modeling that treats contradictions as fundamental building blocks rather than logical failures."
+authors:
+  - family-names: Betti
+    given-names: Gregory
+    # email: [will be added when available]
+    # affiliation: [will be added when available]
+    # orcid: [will be added when available]
+repository-code: "https://github.com/Betti-Labs/rso-framework"
+url: "https://github.com/Betti-Labs/rso-framework"
+license: MIT
+version: "1.0.0"
+date-released: "2025-01-26"
+keywords:
+  - "paraconsistent logic"
+  - "recursive systems"
+  - "quantum mechanics"
+  - "consciousness"
+  - "computational ontology"
+  - "contradiction preservation"
+  - "artificial intelligence"
+  - "quantum computing"
+preferred-citation:
+  type: article
+  title: "Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling"
+  authors:
+    - family-names: Betti
+      given-names: Gregory
+  journal: "GitHub Repository"
+  year: 2025
+  month: 1
+  url: "https://github.com/Betti-Labs/rso-framework"
+  abstract: "We present the Recursive Superpositional Ontology (RSO) framework, a novel computational paradigm that treats contradictions as fundamental building blocks of reality rather than logical failures. Unlike classical logic systems that seek to eliminate contradictions, RSO preserves and utilizes them through the superpositional operator and recursive Xi attractors."
