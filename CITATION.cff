@@ -29,8 +29,8 @@ preferred-citation:
   authors:
     - family-names: Betti
       given-names: Gregory
-  journal: "GitHub Repository"
+  journal: "Academia.edu"
   year: 2025
   month: 1
-  url: "https://github.com/Betti-Labs/rso-framework"
+  url: "https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling"
   abstract: "We present the Recursive Superpositional Ontology (RSO) framework, a novel computational paradigm that treats contradictions as fundamental building blocks of reality rather than logical failures. Unlike classical logic systems that seek to eliminate contradictions, RSO preserves and utilizes them through the superpositional operator and recursive Xi attractors."

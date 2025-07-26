@@ -4,7 +4,7 @@ RSO Framework - Recursive Superpositional Ontology
 A computational framework for contradiction-preserving logic and reality modeling.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Gregory Betti"
 # __email__ = "[email will be added when available]"
 

@@ -465,7 +465,8 @@ Comprehensive test suite covering:
 **Corresponding Author:**  
 Gregory Betti  
 Independent Researcher  
-GitHub: https://github.com/Betti-Labs/rso-framework
+GitHub: https://github.com/Betti-Labs/rso-framework  
+Academia.edu: https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling
 
 **Manuscript received:** January 2025  
 **Accepted for publication:** Pending peer review  

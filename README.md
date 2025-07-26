@@ -1,5 +1,13 @@
 # Recursive Superpositional Ontology (RSO) Laboratory
 
+## 🎉 **PUBLISHED RESEARCH** 🎉
+
+📄 **[Read the Full Paper on Academia.edu](https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling)**
+
+*"Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling"* by Gregory Betti is now available for the global research community.
+
+---
+
 Welcome to the **RSO Laboratory**, an open repository for exploring the
 metaphysical and symbolic logic framework introduced in _Reality as
 Recursion: A Symbolic Framework for Contradiction‑Based Existence_.
@@ -224,3 +232,28 @@ print(f"Average execution time: {summary['avg_execution_time']:.6f}s")
 
 We hope these tools help you delve deeper into the paradoxical yet
 structured world of Recursive Superpositional Ontology.
+
+## 📚 How to Cite
+
+If you use the RSO framework in your research, please cite the published paper:
+
+**APA Style:**
+```
+Betti, G. (2025). Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling. Academia.edu. https://www.academia.edu/143089984/
+```
+
+**BibTeX:**
+```bibtex
+@article{betti2025rso,
+  title={Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling},
+  author={Betti, Gregory},
+  journal={Academia.edu},
+  year={2025},
+  url={https://www.academia.edu/143089984/Recursive_Superpositional_Ontology_A_Computational_Framework_for_Contradiction_Preserving_Logic_and_Reality_Modeling}
+}
+```
+
+**Software Citation:**
+```
+Betti, G. (2025). RSO Framework: Recursive Superpositional Ontology (Version 1.0.1) [Computer software]. GitHub. https://github.com/Betti-Labs/rso-framework
+```

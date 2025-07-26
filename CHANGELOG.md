@@ -5,6 +5,13 @@ All notable changes to the RSO Framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-01-26
+
+### Published
+- **Academic Paper Published**: Paper now available on Academia.edu at https://www.academia.edu/143089984/
+- **Citation Updates**: Updated all citation information to reference the published paper
+- **Documentation Updates**: Added publication links throughout repository
+
 ## [1.0.0] - 2025-01-26
 
 ### Added

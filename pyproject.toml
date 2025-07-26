@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rso-framework"
-version = "1.0.0"
+version = "1.0.1"
 description = "Recursive Superpositional Ontology - A framework for contradiction-preserving logic"
 readme = "README.md"
 license = {text = "MIT"}
