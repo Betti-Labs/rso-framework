@@ -14,8 +14,7 @@
 ---
 
 Welcome to the **RSO Laboratory**, an open repository for exploring the
-metaphysical and symbolic logic framework introduced in _Reality as
-Recursion: A Symbolic Framework for Contradiction‑Based Existence_.
+metaphysical and symbolic logic framework introduced in _Recursive Superpositional Ontology: A Computational Framework for Contradiction-Preserving Logic and Reality Modeling_.
 
 This repository accompanies the scientific paper written by
 **Gregory Betti (Betti Labs)** and contains reproducible code,
